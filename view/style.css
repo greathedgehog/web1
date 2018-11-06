@@ -1,0 +1,45 @@
+body{
+  margin:0;
+}
+h1 {
+  margin:0;
+  text-align: center;
+  font-size:45px;
+  background-color: #f44336;
+  border-bottom: black, 0.2px;
+  border-bottom-style:solid;
+}
+ol {
+  padding:28px;
+  margin: 0;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: black;
+  padding: 0.2em 0.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: red;
+  text-decoration-line:underline
+}
+.grid {
+  display: grid;
+  grid-template-columns: 2.5fr 7.5fr;
+}
+#left_menu{
+  background-color: #f44336;
+  border-right: solid;
+}
+#content {
+  margin-left: 10px;
+  align-items: flex-start;
+}
+@media(min-width:800px){
+.grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+}

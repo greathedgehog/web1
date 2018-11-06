@@ -3,14 +3,16 @@ function print_title(){
   if(isset($_GET['id'])){
     echo $_GET['id'];
   } else {
-    echo "Welcome";
+    $list = scandir('./data');
+    echo $list[2];
   }
 }
 function print_description(){
   if(isset($_GET['id'])){
     echo file_get_contents("data/".$_GET['id']);
   } else {
-    echo "Hello, PHP";
+    $list = scandir('./data');
+    echo file_get_contents("data/".$list[2]);
   }
 }
 function print_list(){
